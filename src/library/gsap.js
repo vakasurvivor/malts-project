@@ -1,20 +1,20 @@
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { setupLenis } from './lenis.js';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { setupLenis } from './lenis.js';
 
 // ****************************************************************
-// GSAP 初期設定
+// // GSAP 初期設定
 
-// 使用する gsapプラグイン を登録する
-gsap.registerPlugin(ScrollTrigger);
+// // 使用する gsapプラグイン を登録する
+// gsap.registerPlugin(ScrollTrigger);
 
-// GSAP ScrollTrigger と Lenisを統合
-const lenis = setupLenis();
-lenis.on('scroll', ScrollTrigger.update);
-gsap.ticker.add((time) => {
-	lenis.raf(time * 1000);
-});
-gsap.ticker.lagSmoothing(0);
+// // GSAP ScrollTrigger と Lenisを統合
+// const lenis = setupLenis();
+// lenis.on('scroll', ScrollTrigger.update);
+// gsap.ticker.add((time) => {
+// 	lenis.raf(time * 1000);
+// });
+// gsap.ticker.lagSmoothing(0);
 
 // ****************************************************************
 // GSAP 自作関数作成

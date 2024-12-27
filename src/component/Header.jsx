@@ -1,5 +1,5 @@
-import { setupLenis } from '../library/lenis';
-const lenis = setupLenis();
+// import { setupLenis } from '../library/lenis';
+// const lenis = setupLenis();
 
 export default function Header() {
 	function handleHeaderButtonEl() {
@@ -27,11 +27,11 @@ export default function Header() {
 		// ナビゲーションの開閉
 		headerNavEl.classList.toggle('active');
 
-		if (headerNavEl.classList.contains('active')) {
-			lenis.stop();
-		} else {
-			lenis.start();
-		}
+		// if (headerNavEl.classList.contains('active')) {
+		// 	lenis.stop();
+		// } else {
+		// 	lenis.start();
+		// }
 	}
 
 	return (

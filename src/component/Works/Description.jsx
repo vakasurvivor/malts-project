@@ -1,4 +1,4 @@
-import data from './worksList.json';
+// import data from './worksList.json';
 
 export default function Description() {
 	// const parsed = JSON.parse(data);

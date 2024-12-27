@@ -80,7 +80,7 @@ export default function Company() {
 							</tr>
 							<tr>
 								<th>代表者</th>
-								<td>代表取締役社長&ensp;&ensp;山科 哲広</td>
+								<td>代表取締役社長&ensp;&ensp;茨木下田</td>
 							</tr>
 							<tr>
 								<th>取引銀行</th>
