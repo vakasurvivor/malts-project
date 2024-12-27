@@ -27,12 +27,8 @@ export default function Company() {
 								</clipPath>
 							</svg>
 
-							{/* <svg
-								viewBox="0 0 500 500"
-								className="ly-top__mask--svg02"
-								fill="#cfc1af"
-							>
-								<path>
+							{/* <svg viewBox="0 0 500 500" className="ly-top__mask--svg02">
+								<path fill="#cfc1af">
 									<animate
 										attributeName="d"
 										dur="20s"
