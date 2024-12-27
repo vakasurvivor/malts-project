@@ -12,7 +12,7 @@ export default function Footer() {
 				</div> */}
 				<div className="ly-footer__copyright">
 					<small>Copyright © </small>
-					<small className="ly-footer__AD" data-AD="">
+					<small className="ly-footer__AD" data-ad="">
 						{' '}
 						MALTS
 					</small>
