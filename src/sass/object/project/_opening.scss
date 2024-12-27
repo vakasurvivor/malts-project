@@ -1,0 +1,69 @@
+@charset 'utf-8';
+@use '../../foundation/_mixin' as *;
+
+.p-opening {
+	display: flex;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	height: 100dvh;
+	overflow: hidden;
+
+	&__box01,
+	&__box02,
+	&__box03,
+	&__box04 {
+		height: 100%;
+		background-color: hsl(0, 0%, 100%);
+		background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png');
+	}
+
+	&__box01 {
+		flex-grow: 1;
+		border-right: thin solid hsl(0, 0%, 75%);
+	}
+
+	&__box02 {
+		display: grid;
+		width: min(50%, (1080px / 2));
+		border-right: thin solid hsl(0, 0%, 75%);
+		place-items: center end;
+	}
+
+	&__box03 {
+		display: grid;
+		width: min(50%, (1080px / 2));
+		overflow: hidden;
+		border-right: thin solid hsl(0, 0%, 75%);
+		place-items: center start;
+	}
+
+	&__box04 {
+		flex-grow: 1;
+	}
+
+	&__box01,
+	&__box04 {
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+	}
+
+	&__text--left {
+		margin-inline-end: max(1rem, 1.3vw);
+		color: hsl(0, 0%, 5%);
+		font-family: 'ltc-goudy-oldstyle-pro', serif;
+		font-size: clamp(1.5rem, 0.171rem + 4.42vw, 3rem);
+		font-style: normal;
+		font-weight: 400;
+		letter-spacing: -0.085em;
+	}
+
+	&__text--right {
+		margin-inline-start: max(0.8rem, 1vw);
+		overflow: hidden;
+		color: hsl(0, 0%, 20%);
+		font-size: clamp(1.5rem, 0.171rem + 4.42vw, 3rem);
+		font-weight: 100;
+	}
+}

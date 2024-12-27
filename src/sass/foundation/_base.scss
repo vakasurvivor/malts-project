@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=M+PLUS+1p:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+	width: 100%;
+	min-height: 100dvh;
+	overflow-x: hidden;
+	// background-color: hsl(15, 20%, 98%);
+	background-color: hsl(13, 22%, 92%);
+	background-image: url('https://www.transparenttextures.com/patterns/otis-redding.png');
+	font-family: var(--font-sans);
+	// scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+// ::-webkit-scrollbar {
+// 	width: var(--sb-size);
+// }
+
+// ::-webkit-scrollbar-track {
+// 	border-radius: 12px;
+// 	background: var(--sb-track-color);
+// }
+
+// ::-webkit-scrollbar-thumb {
+// 	border-radius: 12px;
+// 	background: var(--sb-thumb-color);
+// }
+
+@font-face {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../../fonts/icomoon.eot?t6kbep');
+	src: url('../../fonts/icomoon.eot?t6kbep#iefix') format('embedded-opentype'),
+		url('../../fonts/icomoon.ttf?t6kbep') format('truetype'),
+		url('../../fonts/icomoon.woff?t6kbep') format('woff'),
+		url('../../fonts/icomoon.svg?t6kbep#icomoon') format('svg');
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*='icon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+	speak: never;
+}
+
+.icon-JR {
+	padding-inline-end: 4px;
+	font-size: 1rem;
+	&:before {
+		content: '\e900';
+		color: hsl(121, 87%, 29%);
+	}
+}
+
+.icon-TokyoMetro {
+	padding-inline-end: 4px;
+	font-size: 1rem;
+	scale: 0.9;
+	&__background:before {
+		content: '\e901';
+		color: hsl(195, 100%, 43%);
+	}
+	&__logo:before {
+		content: '\e902';
+		margin-left: -1em;
+		color: hsl(0, 0%, 100%);
+	}
+}

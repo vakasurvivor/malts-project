@@ -1,0 +1,18 @@
+@charset 'utf-8';
+@use '../../foundation/_mixin' as *;
+
+.u-z-index__1 {
+	z-index: 1;
+}
+
+.u-z-index__10 {
+	z-index: 10;
+}
+
+.u-z-index__100 {
+	z-index: 100;
+}
+
+.u-z-index__1000 {
+	z-index: 1000;
+}
